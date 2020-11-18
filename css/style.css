@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+:root {
+    --p-font: "Poppins", sans-serif;
+    --s-font: "Raleway", sans-serif;
+    --accent-color: #009970;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.3;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+/* BANNER START */
+.banner {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 780px;
+    position: relative;
+}
+
+.banner .header-wrapper {
+    background-color: transparent;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all .3s ease-in-out;
+}
+
+.banner .header-wrapper.sticky {
+    background: #fff;
+    top: 0;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+}
+
+.banner .header-wrapper nav {
+    padding: 0 20px 0 0;
+}
+
+.banner .header-wrapper nav .navbar-brand {
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.3;
+    font-weight: 700;
+    background: #009970;
+    padding: 10px 25px;
+}
+
+.banner .header-wrapper nav .navbar-nav .nav-item {
+    margin: 0 0 0 20px;
+}
+
+.banner .header-wrapper nav .navbar-nav .nav-item:nth-of-type(8) .nav-link {
+    color: #fff;
+    padding: 10px 22px;
+    background-color: #009970;
+    border-radius: 50px;
+}
+
+.banner .header-wrapper nav .navbar-nav .nav-item.active .nav-link {
+    color: var(--accent-color);
+}
+
+.banner .desc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 98;
+}
+
+.banner .desc .text-block h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner .desc .text-block h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 0 50px 0;
+}
+
+.banner .desc .text-block a {
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 8px 30px;
+    transition: all .3s ease-in-out;
+}
+
+.banner .desc .text-block a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/*  BANNER END */
+/*  ICON-BLOCK START */
+.icon-block {
+    background-color: #eee;
+}
+
+.icon-block .row .col-2 {
+    padding: 30px 0;
+}
+
+.icon-block .row .col-2 img {
+    max-width: 100px;
+    height: 30px;
+    filter: grayscale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.icon-block .row .col-2 img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1)
+}
+
+/*  ICON-BLOCK END */
+
+/*  EMU-BLOCK END */
+.emu-block {
+    margin: 80px 0 0 0;
+    padding: 0;
+}
+
+.emu-block .col-6 h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #444;
+}
+
+.emu-block .col-6 h3 {
+    font-size: 27px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 34px;
+    margin: 30px 0 120px 0;
+}
+
+.emu-block .col-6 p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #444;
+    line-height: 22px;
+    padding: 0 0 10px 0;
+}
+
+.emu-block .col-6 ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.emu-block .col-6 ul li {
+    font-size: 17px;
+    font-weight: 300;
+    color: #444;
+    line-height: 1.3;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px 0;
+    background-image: url(../images/right.png);
+    background-repeat: no-repeat;
+    background-position: left 8px;
+}
+
+.emu-block .col-6 em {
+    font-size: 17px;
+    font-weight: 300;
+    color: #444;
+    line-height: 22px;
+    margin: 20px 0 0 0;
+}
+
+/*  EMU-BLOCK END */
+
+/* RATING-BLOCK START */
+
+.rating-block {
+    padding: 40px 0;
+    background-color: #009970;
+}
+
+.rating-block .col-3 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.rating-block .col-3 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+/* RATING-BLOCK START */
+
+.why-choose {
+    padding: 60px 0;
+}
+
+.why-choose .text-block {
+    font-family: var(--s-font);
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 4px;
+}
+
+.why-choose .text-block h4 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    margin: 10px;
+}
+
+.why-choose .text-block p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.4;
+    margin: 30px 10px 40px 10px;
+}
+
+.why-choose .text-block .text-center {
+    padding: 0 0 20px 0;
+}
+
+.why-choose .text-block .text-center a {
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #00a579;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 8px 30px;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+.why-choose .text-block .text-center a:hover {
+    background: #00c892;
+}
+
+.why-choose .text-block .text-center i {
+    position: absolute;
+    top: auto;
+    right: 34%;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.why-choose .block {
+    font-family: var(--s-font);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.why-choose .block i.bx {
+    font-size: 40px;
+    color: var(--accent-color);
+}
+
+.why-choose .block h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.3;
+    margin: 30px 0 30px 0;
+}
+
+.why-choose .block p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.3;
+    margin: 0 10px;
+    padding: 0 0 30px 0;
+}
+
+
+/* ACTION START */
+
+.action {
+    font-family: var(--s-font);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../images/cta-bg.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+
+}
+
+.action h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.action p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.3;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.action a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.3;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    margin: 0;
+    transition: all .3s ease-in-out;
+}
+
+.action a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* ACTION END */
+
+/*portfolio start*/
+
+.portfolio {
+    padding: 70px 0;
+}
+
+.portfolio .title-block h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.3;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.portfolio .title-block h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.portfolio .title-block p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.3;
+    padding: 0 0 20px 0;
+}
+
+.portfolio .tab-block {
+    list-style: none;
+    margin: 0 0 50px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .tab-block > * {
+
+    background: transparent;
+
+    color: #fff;
+}
+
+.portfolio .tab-block > * + * {
+    margin-left: 30px;
+}
+
+.portfolio .tab-block > li > a {
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+
+.portfolio .tab-block > li.active > a {
+    color: #fff;
+    background: var(--accent-color);
+}
+
+.portfolio .tab-block li a:hover {
+    text-decoration: none;
+    background: var(--accent-color);
+    color: #fff;
+}
+
+.portfolio .gallery-block .card {
+    margin: 0 0 30px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio .gallery-block .card img {
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+}
+
+.portfolio .gallery-block .card:hover img {
+    transform: scale(1.5);
+}
+
+.portfolio .gallery-block .card span {
+    background-color: rgba(0, 0, 0, .8);
+    display: block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    transition: all .5s ease-in-out;
+    transition-delay: .5s;
+}
+
+.portfolio .gallery-block .card:hover span {
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-block {
+    padding: 60px 0;
+    background-color: #eee;
+}
+
+.contact-block .title-block h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.3;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.contact-block .title-block h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.contact-block .title-block p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.3;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+}
+
+.contact-block .map-block {
+    margin: 0 0 20px 0;
+}
+
+.contact-block .map-block iframe {
+    width: 100%;
+    height: 300px;
+}
